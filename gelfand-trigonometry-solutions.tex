@@ -1486,7 +1486,6 @@ For a regular octagon: $360\degree/8 = 45\degree$.
 \solution
 \solution
 \solution
-\end{solutions}
 
 \begin{solutions}{Page 111}
 \solution
@@ -1502,7 +1501,7 @@ Since a circle of radius 1 rotates 1 radian to travel 1 foot, then if it rotates
 Since $120^{\circ} = \pi/3$ radians, then the wheel has travelled $\pi/3$ feet down the road
 
 \solution
-A sector of radius 1 with angle $\alpha$ radians has arc length of $1 \times \apha$, so
+A sector of radius 1 with angle $\alpha$ radians has arc length of $1 \times \alpha$, so
 
 Angle of 1/2 radian has arc length of 1/2
 
@@ -1626,14 +1625,110 @@ It would be
 
 \begin{solutions}{Page 120}
 \solution
+Results up 5 decimal places is listed below
+%\begin{table}[]
+\begin{tabular}{|l|l|l|}
+\hline
+$\alpha$ (radians) & $\alpha$ (degrees)  & $\sin alpha$\\ \hline
+1       & 57.29578 & 0.84147   \\ \hline
+0.5     & 28.64789 & 0.47943   \\ \hline
+0.2     & 11.45916 & 0.19867   \\ \hline
+0.1     & 5.72958  & 0.09983   \\ \hline
+0.01    & 0.57296  & 0.01000   \\ \hline
+0.02    & 1.14592  & 0.02000   \\ \hline
+0.001   & 0.05730  & 0.00100   \\ \hline
+0.002   & 0.11459  & 0.00200   \\ \hline
+0.005   & 0.28648  & 0.00500   \\ \hline
+\end{tabular}
+%\end{table}
+
 \solution
+Since $\sin x \approx x$ when x is in radians then $\sin 0.00123456 \approx 0.00123456$ (calculator result is 0.00123456), so estimate is quite accurate
+
 \solution
+\begin{subsolutions}
+
+\subsolution Results are written to 5 decimal place
+%\begin{table}[]
+\begin{tabular}{|l|l|l|}
+\hline
+$\alpha$ & $\alpha$ – $\alpha^3/6$ & $\sin \alpha$ \\ \hline
+1     & 0.83333                    & 0.84147   \\ \hline
+0.5   & 0.47917                    & 0.47943   \\ \hline
+0.2   & 0.19867                    & 0.19867   \\ \hline
+0.1   & 0.09983                    & 0.09983   \\ \hline
+0.01  & 0.01000                    & 0.01000   \\ \hline
+0.02  & 0.02000                    & 0.02000   \\ \hline
+0.001 & 0.00100                    & 0.00100   \\ \hline
+0.002 & 0.00200                    & 0.00200   \\ \hline
+0.005 & 0.00500                    & 0.00500   \\ \hline
+\end{tabular}
+%\end{table}
+
+\subsolution 
+Since conversion from $\alpha$ radians to D degrees is $D = \alpha \times 180 \div \pi$, then to convert degrees to radians is $\alpha = D \times \pi \div 180$j
+\begin{align*}
+    &\alpha - \alpha^3/6
+    &=\left( D\pi/180 \right) - (D\pi/180)^3/6\\
+\end{align*}
+Testing when D is 1 degree, $\sin 1^{\circ} \approx 0.01745$ using the approximation (calculator result is 0.01745)
+\end{subsolutions}
+
 \solution
+If $\alpha$ is in radians, the maximum error is $\alpha^5/120$, then for measurement in degrees $D$, which can be calculated from $D=\alpha \times 180/\pi$, making
+
+\begin{align*}
+    &\alpha^5/120\\
+    &= \left( \frac{\alpha^5}{120} \right) \div 120
+\end{align*}
+
 \solution
+\begin{align*}
+    x^5/120 &< 0.001\\
+    x^5 &< 0.12\\
+x &< \sqrt[5]{0.12}\\
+x &< 0.65438
+\end{align*}
+
 \solution
+There is changing sign between terms, therefore the third term would be a positive
+
+Power of each term increases by two, therefore the third term would have power of 5
+
+the denominator of first term is 1!, denominator of second term is 3!, therefore the denominator of fifth term is 5! (which is 120)
+
+Therefore the third term is \[\frac{x^5}{120} \]
+
+Hint: this is the Taylor Series for $\sin x$
+
 \solution
+$\phi$ stands for one full rotation of a cycle in clockwise direction. So it similar to our way of measuring angles (but our system measure angles counter-clockwise)
+
 \solution
+Easier to convert each in terms of $\pi$, as first quadrant lies $0 \leq \alpha \leq 0.5\pi$, second quadrant lies $pi/2 \leq \alpha 1\pi$, etc
+
+%\begin{table}[]
+\begin{tabular}{|l|l|l|}
+\hline
+      & in terms of pi    & quadrant \\ \hline
+1     & 0.318 & 1        \\ \hline
+2     & 0.636 & 2        \\ \hline
+3     & 0.954 & 2        \\ \hline
+4     & 1.273 & 3        \\ \hline
+5     & 1.591 & 4        \\ \hline
+6     & 1.909 & 4        \\ \hline
+\end{tabular}
+%\end{table}
+For 1000 radians, it is approximately $318.31\pi$, which represents 159 full rotations and $0.31\pi$, therefore it lies in the first quadrant
+
+For 1000 degrees, it is approximately $1000/360 \approx 2.78$ rotations, it represents 2 whole and further 0.78 revolution, therefore it lies in the fourth quadrant
+
 \solution
+should be approximately 1/4 of the angles lies in each quadrant
+
+\solution
+
+\end{solutions}
 \end{solutions}
 
 
